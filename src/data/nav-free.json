@@ -6,8 +6,8 @@
       "items": [
         { "title": "Dashboard", "href": "index.html", "icon": "sliders" },
         { "title": "Profile", "href": "pages-profile.html", "icon": "user" },
-        { "title": "Sign In", "href": "pages-sign-in.html", "icon": "log-in", "stub": true },
-        { "title": "Sign Up", "href": "pages-sign-up.html", "icon": "user-plus", "stub": true },
+        { "title": "Sign In", "href": "pages-sign-in.html", "icon": "log-in" },
+        { "title": "Sign Up", "href": "pages-sign-up.html", "icon": "user-plus" },
         { "title": "Blank", "href": "pages-blank.html", "icon": "book" }
       ]
     },
@@ -15,17 +15,17 @@
       "header": "Tools & Components",
       "items": [
         { "title": "Buttons", "href": "ui-buttons.html", "icon": "square" },
-        { "title": "Forms", "href": "ui-forms.html", "icon": "check-square", "stub": true },
-        { "title": "Cards", "href": "ui-cards.html", "icon": "grid", "stub": true },
-        { "title": "Typography", "href": "ui-typography.html", "icon": "align-left", "stub": true },
-        { "title": "Icons", "href": "icons-feather.html", "icon": "coffee", "stub": true }
+        { "title": "Forms", "href": "ui-forms.html", "icon": "check-square" },
+        { "title": "Cards", "href": "ui-cards.html", "icon": "grid" },
+        { "title": "Typography", "href": "ui-typography.html", "icon": "align-left" },
+        { "title": "Icons", "href": "icons-feather.html", "icon": "coffee" }
       ]
     },
     {
       "header": "Plugins & Addons",
       "items": [
         { "title": "Charts", "href": "charts-chartjs.html", "icon": "bar-chart-2" },
-        { "title": "Maps", "href": "maps-google.html", "icon": "map", "stub": true }
+        { "title": "Maps", "href": "maps-google.html", "icon": "map" }
       ]
     }
   ],

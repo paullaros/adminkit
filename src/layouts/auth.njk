@@ -17,26 +17,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
-		{% include "sidebar.njk" %}
-
-		<div class="main">
-			{% include "navbar.njk" %}
-
-			<main class="content">
-				{{ content | safe }}
-			</main>
-
-			{% include "footer.njk" %}
-		</div>
-	</div>
+	{{ content | safe }}
 
 	<script type="module" src="{{ site.jsPath }}"></script>
-	{% if pageScripts %}
-	<script type="module">
-	{{ pageScripts | safe }}
-	</script>
-	{% endif %}
 	{% if extraScripts %}
 	{{ extraScripts | safe }}
 	{% endif %}
