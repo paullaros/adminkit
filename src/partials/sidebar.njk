@@ -1,0 +1,35 @@
+<nav id="sidebar" class="sidebar js-sidebar">
+	<div class="sidebar-content js-simplebar">
+		<a class="sidebar-brand" href="/index.html">
+			<span class="align-middle">{{ navFree.brand }}</span>
+			{% if edition.edition %}<small class="text-muted ms-1">{{ edition.edition }}</small>{% endif %}
+		</a>
+
+		<ul class="sidebar-nav">
+			{% for section in navFree.sections %}
+			<li class="sidebar-header">{{ section.header }}</li>
+			{% for item in section.items %}
+			<li class="sidebar-item{% if page.url == '/' + item.href or page.fileSlug + '.html' == item.href or (page.fileSlug == 'index' and item.href == 'index.html') %} active{% endif %}">
+				<a class="sidebar-link" href="/{{ item.href }}">
+					<i class="align-middle" data-feather="{{ item.icon }}"></i>
+					<span class="align-middle">{{ item.title }}</span>
+					{% if item.stub %}<span class="badge bg-warning-subtle text-warning ms-auto">stub</span>{% endif %}
+				</a>
+			</li>
+			{% endfor %}
+			{% endfor %}
+		</ul>
+
+		{% if navFree.cta %}
+		<div class="sidebar-cta">
+			<div class="sidebar-cta-content">
+				<strong class="d-inline-block mb-2">{{ navFree.cta.title }}</strong>
+				<div class="mb-3 text-sm">{{ navFree.cta.body }}</div>
+				<div class="d-grid">
+					<a href="{{ navFree.cta.href }}" class="btn btn-primary" target="_blank" rel="noopener">{{ navFree.cta.button }}</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</nav>
