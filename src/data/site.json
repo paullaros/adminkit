@@ -1,0 +1,6 @@
+{
+  "title": "AdminKit",
+  "description": "AdminKit Free v4 SPIKE — Vite + Eleventy/Nunjucks",
+  "cssPath": "/css/app.css",
+  "jsPath": "/js/app.js"
+}

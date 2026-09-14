@@ -1,0 +1,38 @@
+{
+  "brand": "AdminKit",
+  "sections": [
+    {
+      "header": "Pages",
+      "items": [
+        { "title": "Dashboard", "href": "index.html", "icon": "sliders" },
+        { "title": "Profile", "href": "pages-profile.html", "icon": "user" },
+        { "title": "Sign In", "href": "pages-sign-in.html", "icon": "log-in" },
+        { "title": "Sign Up", "href": "pages-sign-up.html", "icon": "user-plus" },
+        { "title": "Blank", "href": "pages-blank.html", "icon": "book" }
+      ]
+    },
+    {
+      "header": "Tools & Components",
+      "items": [
+        { "title": "Buttons", "href": "ui-buttons.html", "icon": "square" },
+        { "title": "Forms", "href": "ui-forms.html", "icon": "check-square" },
+        { "title": "Cards", "href": "ui-cards.html", "icon": "grid" },
+        { "title": "Typography", "href": "ui-typography.html", "icon": "align-left" },
+        { "title": "Icons", "href": "icons-feather.html", "icon": "coffee" }
+      ]
+    },
+    {
+      "header": "Plugins & Addons",
+      "items": [
+        { "title": "Charts", "href": "charts-chartjs.html", "icon": "bar-chart-2" },
+        { "title": "Maps", "href": "maps-google.html", "icon": "map" }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Upgrade to Pro",
+    "body": "Are you looking for more components? Check out our premium version.",
+    "href": "https://adminkit.io/pricing/",
+    "button": "Upgrade to Pro"
+  }
+}

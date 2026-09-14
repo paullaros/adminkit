@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Fonts
 $font-family-sans-serif: "Inter", "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
@@ -50,6 +52,7 @@ $min-contrast-ratio: 3 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
+$enable-dark-mode: false !default;
 
 // Transitions
 $transition-base: all .35s ease-in-out !default;
@@ -155,7 +158,7 @@ $box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
 $box-shadow-lg:    0 0.2rem 0.2rem rgba($black, .05) !default;
 
 // Navbar input
-$navbar-input-bg: darken($body-bg, 0.5%) !default;
+$navbar-input-bg: color.adjust($body-bg, $lightness: -0.5%) !default;
 
 // Border radius
 $border-radius-sm: .1rem !default;
@@ -205,6 +208,7 @@ $input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-bt
 $input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
 // Cards
+$card-bg: $white !default;
 $card-border-radius: .25rem !default;
 $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
@@ -213,7 +217,7 @@ $card-cap-bg: $white !default;
 $card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
-$card-title-color: lighten($gray-600, 15%) !default;
+$card-title-color: color.adjust($gray-600, $lightness: 15%) !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
@@ -224,6 +228,7 @@ $table-cell-padding-y: .75rem !default;
 $table-cell-padding-x: .75rem !default;
 $table-cell-padding-y-sm: .3rem !default;
 $table-cell-padding-x-sm: .3rem !default;
+$table-bg: transparent !default;
 $table-striped-bg: $gray-100 !default;
 $table-hover-bg: rgba($black, .0375) !default;
 
@@ -234,7 +239,6 @@ $sidebar-bg: #222E3C !default;
 
 // Sidebar brand
 $sidebar-brand-padding-y: 1.15rem !default;
-$sidebar-brand-padding-x: 1.5rem !default;
 $sidebar-brand-font-weight: $font-weight-bold !default;
 $sidebar-brand-font-size: 1.15rem !default;
 $sidebar-brand-color: $gray-100 !default;
@@ -293,6 +297,9 @@ $badge-font-size: 80% !default;
 $badge-padding-y: .3em !default;
 $badge-padding-x: .45em !default;
 
+// Dropdowns
+$dropdown-bg: $white !default;
+
 // Main
 $main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
 
@@ -312,6 +319,6 @@ $hamburger-width-middle: 24px !default;
 $hamburger-width-bottom: 16px !default;
 
 // Stats
-$stat-bg: lighten($primary, 35%) !default;
+$stat-bg: color.adjust($primary, $lightness: 35%) !default;
 $stat-icon-color: $primary !default;
 $stat-padding: $spacer * 0.75 !default;
